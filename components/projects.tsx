@@ -59,7 +59,7 @@ const projects = [
     tech: ["Next.js 15", "Tailwind", "Shadcn/ui", "Framer Motion"],
     image: "/professional-organization-website.jpg",
     live: "https://isaacog.vercel.app",
-    github: "https://github.com/isaacog/portfolio",
+    github: "https://github.com/isaacoog1/portfolio",
   },
 ];
 
