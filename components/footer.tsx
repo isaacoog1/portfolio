@@ -1,20 +1,23 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { ArrowUp, Github, Linkedin, Mail, Twitter } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { motion } from "framer-motion";
+import { ArrowUp, Github, Linkedin, Mail } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function Footer() {
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" })
-  }
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com/yourusername", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com/in/yourusername", label: "LinkedIn" },
-    { icon: Twitter, href: "https://twitter.com/yourusername", label: "Twitter" },
-    { icon: Mail, href: "mailto:your.email@example.com", label: "Email" },
-  ]
+    { icon: Github, href: "https://github.com/isaacoog1", label: "GitHub" },
+    {
+      icon: Linkedin,
+      href: "https://linkedin.com/in/oluwakorede-oguntuyo",
+      label: "LinkedIn",
+    },
+    { icon: Mail, href: "mailto:oguntuyokoredeshile@gmail.com", label: "Email" },
+  ];
 
   return (
     <footer className="relative pt-12 px-4 bg-[#0a0a0a] border-t border-[#1a1a1a]">
@@ -78,9 +81,11 @@ export default function Footer() {
           whileInView={{ y: 0 }}
           viewport={{ once: true }}
         >
-          <p className="text-xs text-gray-600">Thanks for scrolling all the way down!</p>
+          <p className="text-xs text-gray-600">
+            Thanks for scrolling all the way down!
+          </p>
         </motion.div>
       </div>
     </footer>
-  )
+  );
 }
